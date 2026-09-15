@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Estilo</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Barbearia do Zé</h1>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div class="texto-inicio">
+            <h2>Seu estilo começa aqui</h2>
+            <p>Cortes modernos, barba e muito estilo para você.</p>
+            <a href="#contato" class="botao">Agendar horario</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre a Barbearia</h2>
+
+        <p>
+            A Barbearia Estilo é um espaço feito para homens que gostam
+            de cuidar do visual. Trabalhamos com cortes masculinos,
+            barba e acabamento.
+        </p>
+
+        <p>
+            Nosso objetivo é deixar você satisfeito e com um visual
+            que combine com seu estilo.
+        </p>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h2>Nossos Serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Corte Masculino</h3>
+                <p>Corte na tesoura ou na maquina.</p>
+                <span>R$ 35,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Barba</h3>
+                <p>Barba feita com acabamento profissional.</p>
+                <span>R$ 25,00</span>
+            </div>
+
+            <div class="card">
+                <h3>Corte + Barba</h3>
+                <p>Combo completo para mudar seu visual.</p>
+                <span>R$ 55,00</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Entre em contato</h2>
+
+        <form id="formulario">
+
+            <label>Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label>Telefone:</label>
+            <input type="text" id="telefone" placeholder="Digite seu telefone">
+
+            <label>Escolha o serviço:</label>
+            <select id="servico">
+                <option value="">Selecione</option>
+                <option value="Corte">Corte Masculino</option>
+                <option value="Barba">Barba</option>
+                <option value="Corte + Barba">Corte + Barba</option>
+            </select>
+
+            <label>Mensagem:</label>
+            <textarea id="mensagem" placeholder="Digite uma mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <div class="informacoes">
+            <p><strong>Telefone:</strong> (79) 58989-80960 </p>
+            <p><strong>Instagram:</strong> @barbeariaestilo</p>
+            <p><strong>Endereço:</strong> Rua Principal, 100 - Centro</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Barbearia Estilo - Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

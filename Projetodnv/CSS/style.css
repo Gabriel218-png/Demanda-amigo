@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #d6a84f;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #d6a84f;
+}
+
+.inicio {
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1400&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.texto-inicio {
+    color: white;
+    max-width: 600px;
+}
+
+.texto-inicio h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.texto-inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #d6a84f;
+    color: #111;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: white;
+}
+
+.sobre {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.sobre h2,
+.servicos h2,
+.contato h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.servicos {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card span {
+    color: #b48628;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contato {
+    background-color: white;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #d6a84f;
+    color: #111;
+}
+
+.informacoes {
+    margin-top: 35px;
+    line-height: 2;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .inicio {
+        min-height: 450px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .texto-inicio h2 {
+        font-size: 32px;
+    }
+
+    .texto-inicio p {
+        font-size: 17px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
